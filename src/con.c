@@ -1064,6 +1064,7 @@ static void con_set_fullscreen_mode(Con *con, fullscreen_mode_t fullscreen_mode)
     if (con->window == NULL)
         return;
 
+    /*
     if (con->fullscreen_mode != CF_NONE) {
         DLOG("Setting _NET_WM_STATE_FULLSCREEN for con = %p / window = %d.\n", con, con->window->id);
         xcb_add_property_atom(conn, con->window->id, A__NET_WM_STATE, A__NET_WM_STATE_FULLSCREEN);
@@ -1071,6 +1072,7 @@ static void con_set_fullscreen_mode(Con *con, fullscreen_mode_t fullscreen_mode)
         DLOG("Removing _NET_WM_STATE_FULLSCREEN for con = %p / window = %d.\n", con, con->window->id);
         xcb_remove_property_atom(conn, con->window->id, A__NET_WM_STATE, A__NET_WM_STATE_FULLSCREEN);
     }
+    */
 }
 
 /*
